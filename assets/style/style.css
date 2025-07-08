@@ -191,4 +191,65 @@ footer {
         padding: 10px 16px;
         font-size: 18px;
     }
+
+}
+
+#photoBackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #EED7C5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    width: 40%;
+    
+}
+
+#ingredients-list{
+     margin: 20px;
+    background-color: #EED7C5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    width : auto;
+    align-self: center;
+    padding : 2%;
+    line-height: 2rem;
+    
+}
+
+h3{
+     text-align: center;
+}
+
+#photo{
+    width : 90%;
+    padding : 3%;
+    border-radius: 10px;
+
+}
+
+#instructions{
+    background-color: #EED7C5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    width: 70%;
+    padding : 2%;
+    line-height: 150%;
+
+}
+
+#informations{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    gap:10px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
