@@ -11,8 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 150px;
+    padding: 20px;
     background-color: #C89F9C;
     color: #101010;
 }
@@ -24,25 +23,26 @@ h1 {
 }
 
 .navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 .navbar a {
-  padding: 8px 24px;
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 20px;
+    padding: 8px 24px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+
 }
 
 .navbar li:hover {
-  transform: scale(1.2);
-  border-radius: 10px;
+    transform: scale(1.2);
+    border-radius: 10px;
 }
 
+/* Texte de présentation du site */
 #presentation {
     background-color: #EED7C5;
     padding: 10px 30px;
@@ -51,6 +51,15 @@ h1 {
     border-radius: 12px;
 }
 
+#recettes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* Nom des recettes */
 h2 {
     font-size: 28px;
     color: #2a2a2a;
@@ -58,24 +67,17 @@ h2 {
     text-align: center;
 }
 
+/*Texte de présentation des recettes sous les photos */
 #presentation p {
     font-size: 15px;
     line-height: 1.6;
 }
 
-
-#recettes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 40px 20px;
-}
-
+/* Cadre dans lequels les 4 recettes sont présentés */
 .recette-card {
     background-color: #EED7C5;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     width: 260px;
     text-align: center;
     display: flex;
@@ -87,18 +89,19 @@ h2 {
     width: 90%;
     border-radius: 10px;
 }
-
+/* Nom des recettes */
 .recette-card h2 {
     font-size: 16px;
 }
 
+/* Texte sous les photos et h2 */
 .recette-card p {
     margin: 0 10px 20px;
     font-size: 14px;
     line-height: 1.4;
 }
 
-
+/* Lorsque l'on survolle les recettes */
 .recette-card:hover {
     transform: scale(1.05);
     background-color: #C89F9C;
@@ -114,26 +117,81 @@ footer {
     font-size: 14px;
 }
 
-.footer-content p {
-    margin: 5px 0;
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+    .navbar a {
+        padding: 10px 16px;
+        font-size: 18px;
+    }
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
+#photoBackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #EED7C5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    width: 40%;
+    
+}
 
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
+#ingredients-list{
+     margin: 20px;
+    background-color: #EED7C5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    width : auto;
+    align-self: center;
+    padding : 2%;
+    line-height: 2rem;
+    
+}
 
-  .navbar a {
-    padding: 10px 16px;
-    font-size: 18px;
-  }
+h3{
+     text-align: center;
+}
+
+#photo{
+    width : 90%;
+    padding : 3%;
+    border-radius: 10px;
+
+}
+
+#instructions{
+    background-color: #EED7C5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    width: 70%;
+    padding : 2%;
+    line-height: 150%;
+
+}
+
+#informations{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    gap:10px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
