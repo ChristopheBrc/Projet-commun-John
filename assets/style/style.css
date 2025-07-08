@@ -1,0 +1,139 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #EEE2DF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 150px;
+    background-color: #C89F9C;
+    color: #101010;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  padding: 8px 24px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar li:hover {
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+
+#presentation {
+    background-color: #EED7C5;
+    padding: 10px 30px;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#presentation p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+#recettes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.recette-card {
+    background-color: #EED7C5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+    width: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.recette-card img {
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.recette-card h2 {
+    font-size: 16px;
+}
+
+.recette-card p {
+    margin: 0 10px 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+.recette-card:hover {
+    transform: scale(1.05);
+    background-color: #C89F9C;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #C89F9C;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  .navbar a {
+    padding: 10px 16px;
+    font-size: 18px;
+  }
+}
